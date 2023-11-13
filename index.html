@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Detective GitHub-Profile</title>
+  <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+       
+      <!-- CSS Link -->
+      <link rel="stylesheet" href="style.css">
+       
+      <!-- Responsive Link -->
+      <link rel="stylesheet" href="responsive.css">
+
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+       
+      <!-- JS Link -->
+      <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="conatiner">
+      <!-- DevDective Heading -->
+      <header class="header flex">
+        <h1 class="header__title">DevDectactive</h1>
+        <div class="theme-toggle flex" data-ThemeChange>
+          <p class="theme-toggle__label" data-color></p>
+          <img class="theme-toggle__icon" data-icon>
+        </div>
+      </header>
+
+      <!-- Search Profile Container -->
+      <form class="search-profile-form flex" data-search-field>
+         <div class="searchField">
+          <img src="Images/search-icon.svg" alt="loading..." class="search-icon">
+        <input type="text" placeholder="Enter a GitHub Username..." data-input-field>
+         </div>
+        <button class="search-btn" data-search-btn type="submit">
+          Search
+          <p class="search-not-found-message" data-error-not-found></p>
+        </button>
+      </form>
+
+      <!-- GitHub User Info -->
+      <div class="github-info-container">
+        <!-- User Profile Info -->
+        <div class="user-profile">
+          <div class="user-container">
+            <div class="user-image"> <img data-user-image></div>
+            <div class="user-details">
+              <p class="user-name" data-user-name></p>
+              <a class="user-profile-link" data-profile-link></a>
+            </div>
+          </div>
+          <p class="user-join-date" data-join-date></p>
+        </div>
+
+        <!-- User Bio -->
+        <p class="user-biography" data-user-bio></p>
+
+        <!-- Follower and Repos Info -->
+        <div class="follower-repos">
+          <div class="follower-repos__list">
+            <p>Repos</p>
+            <a  data-repo></a>
+          </div>
+          <div class="follower-repos__list">
+            <p>Followers</p>
+            <a data-follower></a>
+          </div>
+          <div class="follower-repos__list">
+            <p>Following</p>
+            <a data-following></a>
+          </div>
+        </div>
+
+             <!-- Social Info Container -->
+
+             <div class="profile-Footer">
+
+              <div class="footer-Info">
+                <img src="Images/location-icon.svg" alt="">
+                <p class="location-text" data-location></p>
+              </div>
+  
+              <div class="footer-Info">
+                <img src="Images/website-icon.svg" alt="">
+                <a class="website-link" data-website></a>
+              </div>
+  
+              <div class="footer-Info">
+                <img src="Images/twitter-icon.svg" alt="">
+                <a class="twitter-link" data-twitter></a>
+              </div>
+  
+              <div class="footer-Info">
+                <img src="Images/company-icon.svg" alt="">
+                <p class="company-text" data-company></p>
+              </div>
+  
+            </div>
+      </div>
+
+
+
+    </div>
+    
+</body>
+
+</html>
